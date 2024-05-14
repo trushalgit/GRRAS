@@ -17,7 +17,7 @@ pipeline {
         stage('Deployment') {
             steps {
                 // Copy the WAR file directly to the webapps directory
-                sh 'cp target/slave-project.war /home/node1/jenkins-node/apache-tomcat-9.0.88/webapps'
+                sh 'cp target/GRRAS.war /home/node1/jenkins-node/apache-tomcat-9.0.88/webapps'
                 
                 // Print a message indicating successful deployment
                 echo "Deployment has been completed!"

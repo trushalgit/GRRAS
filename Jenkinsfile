@@ -2,6 +2,10 @@ pipeline {
     agent {
         label 'slave-2'
     }
+
+    environment {
+        JAVA_HOME = '/home/node1/jenkins-node/jdk-11.0.22'
+    }
     
     stages {
         stage('Checkout') {
